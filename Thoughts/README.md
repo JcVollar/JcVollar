@@ -1,0 +1,1 @@
+These are some thoughts about life
