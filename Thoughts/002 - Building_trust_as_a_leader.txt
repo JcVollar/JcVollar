@@ -1,0 +1,224 @@
+# How Leaders Build Trust
+
+I’ve been a leader for many years, and over that time I’ve seen many different approaches to leadership—and many different ways people try to build trust.
+
+One common approach is relying on **positional authority**. Someone becomes a CTO or CEO, and the expectation is that people will listen simply because of the title.
+
+In my experience, that approach rarely works well.
+
+It may work in large organizations where people don’t personally know the leader. If an order comes from someone high up in the hierarchy, and you don’t know them, you may simply follow instructions because of their position.
+
+But the closer people are to you, the **less your title matters**—especially when it comes to trust.
+
+In fact, when people observe leaders from a distance, they often make quick judgments. They may say, “That leader is an idiot,” based on very limited information. Sometimes those judgments are unfair, because outsiders don’t know the context or the reasoning behind decisions.
+
+Still, it highlights an important reality: **trust cannot rely on authority alone.**
+
+---
+
+## Trust in Large vs. Small Leadership Contexts
+
+When leading a large organization, you can’t realistically build a personal relationship with everyone.
+
+If I had 800 people reporting under me, I wouldn’t try to build direct trust with all 800. Instead, I would focus on building trust with the leaders closest to me. Those leaders would then build trust with the teams under them.
+
+But building trust with people close to you is both **harder and easier**.
+
+If you rely only on your position, it might work for a while—but not for long. In many cultures, especially in places like Norway, people are comfortable pointing out mistakes and challenging authority.
+
+So the better approach is to **earn trust through actions**.
+
+---
+
+## The Leader’s Role: Help Others Run
+
+One of the first things I was told when I became CTO stuck with me:
+
+> “You have already succeeded. Your job now is to help others succeed.”
+
+That idea completely changed how I thought about leadership.
+
+The goal is not for the leader to do everything themselves. The goal is to **enable others to succeed**.
+
+If a team comes up with a great idea, highlight them. Say, “This team had a great idea,” rather than claiming the credit yourself.
+
+Unfortunately, I’ve seen many leaders take credit for work that wasn’t theirs. In meetings they say, “I did this,” when in reality someone else had the idea and did the work.
+
+That behavior destroys trust.
+
+A good leader does the opposite: **they lift others up and give credit where it belongs.**
+
+---
+
+## Consistency Builds Trust
+
+One of the simplest ways to build trust is through **consistent behavior**.
+
+Do the right thing repeatedly.
+
+I tend to be quite logical in how I approach problems, which helps me stay consistent in my decisions. Even if time passes and we revisit the same discussion, when someone explains the background again I often arrive at the same conclusion as before.
+
+That consistency matters. People learn that your decisions are based on reasoning rather than mood or politics.
+
+---
+
+## The Three Foundations of Trust
+
+In my experience, trust is built on three main elements.
+
+### 1. Competence
+
+People need to believe you know what you’re doing.
+
+This doesn’t mean you need to know everything. But you should understand enough to guide discussions, and you should know when you **don’t know something**.
+
+When you don’t know, involve others.
+
+Ask questions like:
+
+- What do you think?
+- How should we approach this?
+- Can you help me understand this better?
+
+Good leaders surround themselves with people who know more than they do in specific areas.
+
+---
+
+### 2. Integrity
+
+Never pretend to know everything.
+
+Don’t claim credit for things you didn’t do. Don’t pretend you’re ahead of problems when you aren’t.
+
+Integrity is about being honest about reality — both the good and the bad. If something is going well, give credit to the people who made it happen. If something is not going well, acknowledge it and work with the team to improve it.
+
+Leaders sometimes feel pressure to appear confident and in control at all times. But pretending to have answers you don’t actually have usually backfires. People notice when words and actions don’t match.
+
+If you fake competence, people eventually notice. And once trust is broken, it’s extremely hard to rebuild.
+
+---
+
+### 3. Humility and Transparency
+
+Be open about what you don’t know.
+
+For example, I often need numbers about our systems. I ask the analytics team for them because they know the data better than I do.
+
+Once I rely on someone’s expertise, I also trust their work. If I ever think something looks wrong or unclear, I go back to them and discuss it directly.
+
+What I don’t do is go to someone else to get different numbers because I don’t trust the first person. That kind of behavior quickly undermines people and weakens trust within the team.
+
+If something seems off, talk to the person responsible. Ask questions, understand the reasoning, and work through it together. That way you strengthen both the work and the trust between people.
+
+---
+
+## Communication and Transparency
+
+Communication is one of the most important aspects of trust.
+
+I always try to be honest about what I think, but I also avoid throwing people under the bus.
+
+For example, I might think an idea is terrible. But I would never say:
+
+> “This idea is stupid.”
+
+Instead, I might say:
+
+> “This idea came up, and we should analyze it carefully to see whether it’s worth pursuing.”
+
+This approach allows discussion without humiliating anyone.
+
+Radical honesty is often praised, but I don’t believe in brutal honesty. Leaders need to find the middle ground:
+
+**Be honest, but respectful.**
+
+---
+
+## Overcommunication Is Better Than Silence
+
+Another important lesson: **overcommunication is better than silence**.
+
+Repeating the same message several times may feel unnecessary, but it helps create clarity.
+
+Silence, on the other hand, creates empty spaces where people invent their own interpretations—and those interpretations are often negative.
+
+Even when you’re uncertain about the future, communicating positively can help stabilize the team.
+
+You don’t need to promise success, but you can provide confidence and direction.
+
+---
+
+## Talk to People
+
+One of the most important things leaders can do is simply **talk to people**.
+
+For the last 15–16 years, I’ve organized monthly hack days. One of the goals isn’t just innovation—it’s connection.
+
+I get to sit with developers and ask questions like:
+
+- That was a cool project—how did you build it?
+- What inspired the idea?
+
+These conversations do more than just create a nice atmosphere. They allow me to understand the work people are doing, show that I care about it, and demonstrate that I actually understand the technology and the challenges they face.
+
+It also gives me the opportunity to recognize good work and validate the effort people put into what they build.
+
+Eventually the conversation goes the other way:
+
+- What do you think about the work?
+- What do you think about the leadership?
+
+If you don’t have these kinds of conversations, people may become afraid of you. They won’t approach you with questions or ideas.
+
+And if people are afraid of their leader, something is seriously wrong.
+
+These small conversations touch many of the most important leadership traits at once: competence, visibility, and recognition. People feel seen, they know their work matters, and they know their leader understands what they are doing.
+
+This will build a great trust over time.
+---
+
+## Leadership Lessons From Parenting
+
+After I had my first child, I read a lot of books about child development.
+
+They all emphasized things like:
+
+- Comfort
+- Eye contact
+- Feeling seen
+
+And I realized something interesting.
+
+These needs are **not just for children**. They are universal human needs.
+
+People want to feel seen and valued for what they do.
+
+When someone does something great, acknowledge it.
+
+But don’t overdo praise—make sure it’s genuine.
+
+---
+
+
+
+## Trust Takes Time
+
+Trust cannot be built overnight.
+
+It doesn’t come from big gestures.
+
+It comes from **small, consistent actions over time**—tiny drops that slowly fill the bucket.
+
+Something I notice quite often when new people join the organization is that they don’t immediately understand why I’m the leader. I’m not the kind of extroverted leader who walks into a room and instantly gets everyone to follow.
+
+In fact, I sometimes see new people become a little confused when they watch how people who have worked with me for a long time respond. Discussions are often direct, and when I make a call people usually follow it without much friction.
+
+From the outside, that can look strange.
+
+But the reason is simple: **those people already trust me**.
+
+They have seen the decisions, the conversations, the mistakes, the follow-ups, and the consistency over time. The trust was built long before the new person arrived.
+
+I often find that confusion a little funny. But over time the same thing usually happens again. Through many conversations, small interactions, and repeated actions, new people start to see the same patterns.
+
+And eventually, they start to trust you too.
