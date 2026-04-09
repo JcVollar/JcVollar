@@ -19,4 +19,4 @@ I like to [play with fire](https://www.youtube.com/watch?v=f8KHNaoopSU)
 
 
 [Leadership](https://github.com/JcVollar/JcVollar/blob/main/LeadershipCourse/README.md)
-[Thoughts](https://github.com/JcVollar/JcVollar/blob/main/Thoughts/README.md)
+[Thoughts](https://github.com/JcVollar/JcVollar/tree/main/Thoughts)
