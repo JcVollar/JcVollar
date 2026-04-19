@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jon Chr. Vollar — CTO & Platform Architect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f0f0e;
+    --paper: #f5f2eb;
+    --warm-mid: #e8e3d8;
+    --accent: #c94a1a;
+    --accent-soft: #f0d5ca;
+    --muted: #7a7267;
+    --rule: #d4cfc6;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { font-size: 16px; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.65;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── PRINT / GITHUB RENDER ── */
+  @media print {
+    body { background: white; }
+    .page { box-shadow: none; }
+    @page { margin: 15mm 18mm; }
+  }
+
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 64px 72px 80px;
+    position: relative;
+  }
+
+  /* ── HEADER ── */
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 32px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 48px;
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    flex-shrink: 0;
+  }
+
+  .name-block h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.4rem;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+  }
+
+  .name-block h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .title-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 10px;
+  }
+
+  .contact-block {
+    text-align: right;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    line-height: 2;
+    color: var(--muted);
+  }
+
+  .contact-block a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .contact-block a:hover { text-decoration: underline; }
+
+  /* ── INTRO ── */
+  .intro {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.22rem;
+    line-height: 1.6;
+    color: var(--ink);
+    max-width: 640px;
+    margin-bottom: 52px;
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+  }
+
+  /* ── SECTIONS ── */
+  section {
+    margin-bottom: 48px;
+  }
+
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  /* ── EXPERIENCE ENTRIES ── */
+  .entry {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 0 32px;
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .entry-meta {
+    padding-top: 3px;
+  }
+
+  .entry-years {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--muted);
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+
+  .entry-years strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink);
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 2px;
+  }
+
+  .entry-body h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.18rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 3px;
+  }
+
+  .entry-body .org {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  .entry-body p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .entry-body p:last-child { margin-bottom: 0; }
+
+  .highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .tag {
+    background: var(--warm-mid);
+    color: var(--ink);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    padding: 3px 9px;
+    border-radius: 2px;
+  }
+
+  .tag.accent {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  /* ── SKILLS GRID ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .skill-group h4 {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .skill-group ul {
+    list-style: none;
+    font-size: 0.87rem;
+    line-height: 1.9;
+    color: var(--ink);
+  }
+
+  .skill-group ul li::before {
+    content: '›  ';
+    color: var(--accent);
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* ── EDUCATION + LANGUAGES ── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  /* ── BOTTOM STRIPE ── */
+  .bottom-rule {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 2px solid var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+  }
+
+  /* ── SIDE ACCENT BAR ── */
+  .page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--accent);
+  }
+
+  @media print {
+    .page::before { display: none; }
+  }
+
+  @media (max-width: 680px) {
+    .page { padding: 32px 24px 48px; }
+    header { grid-template-columns: 1fr; }
+    .contact-block { text-align: left; }
+    .entry { grid-template-columns: 1fr; }
+    .entry-years { margin-bottom: 8px; }
+    .skills-grid { grid-template-columns: 1fr 1fr; }
+    .two-col { grid-template-columns: 1fr; }
+    .name-block h1 { font-size: 2.4rem; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header>
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/24988995?s=400&u=4329978a606057bdd0ac5c2bf3d053084b1a42d5&v=4" alt="Jon Chr. Vollar">
+    <div class="name-block">
+      <h1>Jon Chr. <em>Vollar</em></h1>
+      <p class="title-tag">Chief Technology Officer &nbsp;·&nbsp; Platform Architect &nbsp;·&nbsp; AI Transformation Leader</p>
+    </div>
+    <div class="contact-block">
+      Markveien 3b, 1406 Ski, Norway<br>
+      <a href="tel:+4797715275">(+47) 977 15 275</a><br>
+      <a href="/cdn-cgi/l/email-protection#bed4ddfec8d1d2d2dfcc90d0dbca"><span class="__cf_email__" data-cfemail="cca6af8cbaa3a0a0adbee2a2a9b8">[email&#160;protected]</span></a><br>
+      <a href="https://github.com/jonvollar">github.com/jonvollar</a><br>
+      <a href="https://www.linkedin.com/in/jon-vollar-89555326/">linkedin.com/in/jon-vollar</a>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <p class="intro">
+    I co-built Mittanbud from a three-person side project into Scandinavia's leading home-services marketplace — without scaling the engineering team proportionally. Now I want to help technology organisations move boldly into the AI era: faster iteration, safer systems, and code that is genuinely good.
+  </p>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <div class="section-label">Experience</div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <div class="entry-years">
+          <strong>2016</strong>
+          → present
+        </div>
+      </div>
+      <div class="entry-body">
+        <h3>Chief Technology Officer</h3>
+        <div class="org">Mittanbud Marketplaces AS (prev. Schibsted Norge SMB AS) — Oslo, Norway</div>
+        <p>
+          Scaled the engineering organisation from 5 to ~50 engineers spread across Norway, Sweden, Denmark, Finland and Poland — all without replicating infrastructure per country. Oversaw the platform's international expansion across all four Nordic markets under the brands Mittanbud, Servicefinder, Remppatori and 3byggetilbud.
+        </p>
+        <p>
+          Served as the technical partner in M&amp;A integrations: migrating acquired codebases onto the core platform, consolidating infrastructure, and scaling down redundant engineering capacity where needed. Won an internal Schibsted competition against Finn Oppdrag in 2016, validating the product and securing the company's future. Managed the ownership journey from VG → Schibsted → Vend → Verdane, including full infrastructure migration away from Schibsted.
+        </p>
+        <p>
+          Drafted and led execution of a 5-year AI transformation strategy (2026–2030), embedding AI tooling across product, engineering, compliance, and operations.
+        </p>
+        <div class="highlights">
+          <span class="tag accent">Platform architecture</span>
+          <span class="tag accent">International expansion</span>
+          <span class="tag accent">AI strategy</span>
+          <span class="tag">M&amp;A integration</span>
+          <span class="tag">Team scaling</span>
+          <span class="tag">Infra migration</span>
+          <span class="tag">GDPR / Datatilsynet</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <div class="entry-years">
+          <strong>2008</strong>
+          → 2016
+        </div>
+      </div>
+      <div class="entry-body">
+        <h3>Founder &amp; Tech Lead</h3>
+        <div class="org">Mittanbud.no AS — Oslo, Norway</div>
+        <p>
+          Built the very first version of Mittanbud and remain lead architect of the core platform framework to this day. Took the product from zero to market leader in Norway, then grew the team and transitioned from solo builder to engineering lead. Hired and mentored the initial developer team, establishing the technical culture the company still runs on.
+        </p>
+        <div class="highlights">
+          <span class="tag accent">Greenfield platform build</span>
+          <span class="tag">Lead architecture</span>
+          <span class="tag">Team hiring</span>
+          <span class="tag">PHP / Go / JS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <div class="entry-years">
+          <strong>2007</strong>
+          → 2008
+        </div>
+      </div>
+      <div class="entry-body">
+        <h3>Full Stack Developer</h3>
+        <div class="org">ProfDoc AS — Lysaker, Norway</div>
+        <p>
+          Developed software for doctors' offices and health centres. The company was acquired in 2008 and development was relocated to Germany.
+        </p>
+        <div class="highlights">
+          <span class="tag">Healthcare software</span>
+          <span class="tag">Full stack</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <div class="entry-years">
+          <strong>2005</strong>
+          → 2007
+        </div>
+      </div>
+      <div class="entry-body">
+        <h3>Full Stack Developer</h3>
+        <div class="org">Magenta Multimedia AS — Oslo, Norway</div>
+        <p>
+          Delivered 60–80 client websites in under two years at a small web agency — before CMSes or modern frameworks existed. Learned to build fast, ship often, and work directly with clients.
+        </p>
+        <div class="highlights">
+          <span class="tag">Web development</span>
+          <span class="tag">Client delivery</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <div class="entry-years">
+          <strong>2004</strong>
+          → present
+        </div>
+      </div>
+      <div class="entry-body">
+        <h3>Founder</h3>
+        <div class="org">Vollar Development — Oslo, Norway</div>
+        <p>
+          Consulting company started in university to formalise client work. Active to this day — taking on selective development, advisory, and technical hiring-support projects.
+        </p>
+        <div class="highlights">
+          <span class="tag">Consulting</span>
+          <span class="tag">Advisory</span>
+          <span class="tag">Technical hiring</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <div class="section-label">Skills &amp; Technology</div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Engineering</h4>
+        <ul>
+          <li>PHP, Go, Python</li>
+          <li>JavaScript / TypeScript</li>
+          <li>Node.js, HTML, CSS</li>
+          <li>PostgreSQL, MariaDB</li>
+          <li>Elasticsearch / pgvector</li>
+          <li>Docker, Linux</li>
+          <li>AWS, Google Cloud</li>
+          <li>Security &amp; penetration testing</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Architecture &amp; AI</h4>
+        <ul>
+          <li>Distributed platform design</li>
+          <li>Multi-brand / multi-market SaaS</li>
+          <li>AI tooling &amp; agent systems</li>
+          <li>RAG / semantic search</li>
+          <li>ChatGPT, Claude, Cursor ++</li>
+          <li>CI/CD &amp; DevOps</li>
+          <li>Domain &amp; DB modelling</li>
+          <li>API design (REST / GraphQL)</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Leadership &amp; Compliance</h4>
+        <ul>
+          <li>Engineering org scaling</li>
+          <li>Tech &amp; product strategy</li>
+          <li>Roadmapping &amp; prioritisation</li>
+          <li>M&amp;A technical due diligence</li>
+          <li>Hiring &amp; team building</li>
+          <li>Two-sided marketplace product</li>
+          <li>GDPR / Datatilsynet</li>
+          <li>Agile / Lean / Scrum</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + LANGUAGES -->
+  <div class="two-col">
+    <section>
+      <div class="section-label">Education</div>
+      <div class="entry-body">
+        <h3>Bachelor of Computer Science</h3>
+        <div class="org">NITH — Norges Informasjonsteknologiske Høgskole, Oslo</div>
+        <p style="font-size:0.87rem; color:#555;">Programming fundamentals, software engineering, systems design. Funded fully by client work through Vollar Development.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">Languages &amp; Beyond</div>
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <ul>
+          <li>Norwegian (native)</li>
+          <li>English (fluent)</li>
+        </ul>
+      </div>
+      <div class="skill-group" style="margin-top:16px;">
+        <h4>Other</h4>
+        <ul>
+          <li>Norwegian Scout (Æreskniven)</li>
+          <li>Speiderombud, Follo krets (10 years)</li>
+          <li>CTF / security competitions</li>
+          <li>Woodworking &amp; making</li>
+          <li>Demoscene programming</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="botto

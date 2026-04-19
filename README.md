@@ -18,5 +18,10 @@ I like to [play with fire](https://www.youtube.com/watch?v=f8KHNaoopSU)
 
 
 
+<<<<<<< HEAD
 [Leadership: New Leader - The First Six Months](https://github.com/JcVollar/JcVollar/blob/main/LeadershipCourse/001_New_Leader_first_six_months.md)
 [Thoughts](https://github.com/JcVollar/JcVollar/blob/main/Thoughts/README.md)
+=======
+[Leadership](https://github.com/JcVollar/JcVollar/blob/main/LeadershipCourse/README.md)
+[Thoughts](https://github.com/JcVollar/JcVollar/tree/main/Thoughts)
+>>>>>>> c0b0bba2e524448db30d7160760a285be272bc67
